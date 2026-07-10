@@ -7,9 +7,9 @@ const STYLES: Record<Risk, string> = {
 };
 
 const LABELS: Record<Risk, string> = {
-  low: 'Low risk',
-  medium: 'Medium risk',
-  high: 'High risk',
+  low: 'Good',
+  medium: 'Maybe',
+  high: 'Ghost',
 };
 
 export function RiskBadge({ risk }: { risk: Risk }) {

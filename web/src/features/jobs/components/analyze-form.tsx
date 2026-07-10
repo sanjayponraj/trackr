@@ -32,12 +32,12 @@ export function AnalyzeForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="flex gap-2">
+    <form onSubmit={handleSubmit} className="flex flex-col gap-2">
       <input
         value={company}
         onChange={(e) => setCompany(e.target.value)}
         list="company-suggestions"
-        placeholder="Type or pick a company (e.g. databricks)"
+        placeholder="Type or pick a company (e.g. five9)"
         className="flex-1 rounded-lg border border-zinc-300 bg-white px-3 py-2 text-sm outline-none focus:border-zinc-500 focus:ring-1 focus:ring-zinc-500"
       />
       <datalist id="company-suggestions">
