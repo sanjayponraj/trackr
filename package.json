@@ -1,0 +1,17 @@
+{
+  "name": "trackr",
+  "version": "0.0.1",
+  "description": "Job application tracker — learning project for React, Next.js, and NestJS",
+  "private": true,
+  "license": "UNLICENSED",
+  "scripts": {
+    "dev": "yarn dev:api & yarn dev:web",
+    "dev:api": "yarn --cwd api start:dev",
+    "dev:web": "yarn --cwd web dev",
+    "build": "yarn build:api && yarn build:web",
+    "build:api": "yarn --cwd api build",
+    "build:web": "yarn --cwd web build",
+    "install:all": "yarn --cwd api install && yarn --cwd web install",
+    "lint": "yarn --cwd api lint"
+  }
+}
